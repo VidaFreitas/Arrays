@@ -8,16 +8,17 @@ namespace Arrays
         {
             Console.Clear();
 
-            var meuArray = new int[5] { 10, 12, 14, 16, 18 };
-            meuArray[0] = 12;
+            var funcionarios = new Funcionario[5];
+            funcionarios[0] = new Funcionario() { Id = 2579 };
 
-            Console.WriteLine(meuArray.Length);
-
-            for (var index = 0; index <= meuArray.Length; index++)
+            foreach (var funcionario in funcionarios)
             {
-                Console.WriteLine(meuArray[index]);
+                Console.WriteLine(funcionario.Id);
             }
-
         }
+    }
+    public struct Funcionario
+    {
+        public int Id { get; set; }
     }
 }
