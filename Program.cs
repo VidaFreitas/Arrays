@@ -8,13 +8,13 @@ namespace Arrays
         {
             Console.Clear();
 
-            var funcionarios = new Funcionario[5];
-            funcionarios[0] = new Funcionario() { Id = 2579 };
+            var primeiro = new int[4];
+            var segundo = new int[4];
 
-            foreach (var funcionario in funcionarios)
-            {
-                Console.WriteLine(funcionario.Id);
-            }
+            segundo[0] = primeiro[0];
+
+            primeiro[0] = 23;
+            Console.WriteLine(segundo[0]);
         }
     }
     public struct Funcionario
